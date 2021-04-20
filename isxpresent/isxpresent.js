@@ -54,7 +54,7 @@
     for (el of shouldnt) {
         if (document.querySelector(el)) {
             shouldntFound++
-            console.warn(`${shouldntFound}. Found <${el}>. Please check!`);
+            console.warn(`${shouldntFound}. Found “${el}”. Please check!`);
             console.log(document.querySelector(el))
         }
     }
