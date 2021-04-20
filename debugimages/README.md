@@ -4,6 +4,10 @@
 * Lists images with empty `alt` attributes
 * Lists images with _suspicious_  `alt` attributes
 
+[Copy the script](https://github.com/matuzo/DevToolsSnippets/blob/main/debugimages/debugimages.js).
+
+![Demo output of the image debugging script that lists images with suspicious and empty alts and images with missing width or height attributes](../assets/imagedebug.png)
+
 ## Dimensions
 
 To prevent layout shifts, images should have `width` and `height` attributes.

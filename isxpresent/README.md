@@ -2,6 +2,10 @@
 
  Checks if elements that _usually_ should be present, are actually there and if elements that _probabaly_ shouldn’t be present, aren’t there.
 
+ [Copy the script](https://github.com/matuzo/DevToolsSnippets/blob/main/isxpresent/isxpresent.js).
+
+ ![Demo output of the “Is x present?” script that lists a bunch of warning related to malformed HTML](../assets/isxpresent.png)
+
 ## Stuff that probably should be present
 
 * `<header>`
@@ -10,7 +14,6 @@
 * `<main>`
 
 ## Stuff that probably shouldn’t be present
-
 
 * `a:not([href])`  
   Placeholder link (fine) or fake link/button (bad)

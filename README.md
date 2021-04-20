@@ -19,7 +19,7 @@ This not a replacement for automatic testing tools like the [HTML validator](htt
 * Logs the number of DOM nodes in `<body>`
 * Lists headings and document outline
 
-![Demo output of the basic document information, including the heading outline that shows empty and skipped headings](assets/docinfo.png)
+![Demo output of the basic document information, including the heading outline that shows empty and skipped headings](../assets/docinfo.png)
 
 [Details about documentinfo.js](documentinfo/)
 ### Debug images
