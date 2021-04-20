@@ -4,6 +4,7 @@
   console.clear();
   
   const images = document.querySelectorAll('img');
+  const missingAlt = []
   const emptyAlt = []
   const suspiciousAlt = []
   const missingDimensions = []
@@ -12,15 +13,21 @@
   if (images.length) {
     for (let i = 0; i < images.length; i++) {
       const image = images[i];
-      const attr = image.getAttribute('alt').trim();
- 
-      if (attr === '') {
-        emptyAlt.push(image)
+
+      if (image.getAttribute('alt')) {
+        const attr = image.getAttribute('alt').trim();
+  
+        if (attr === '') {
+          emptyAlt.push(image)
+        }
+
+        if (suspicious.indexOf(attr) > -1) {
+          suspiciousAlt.push(image)
+        }
+      } else {
+        missingAlt.push(image)
       }
 
-      if (suspicious.indexOf(attr) > -1) {
-        suspiciousAlt.push(image)
-      }
 
       if (!image.attributes.width || !image.attributes.height) {
         missingDimensions.push(image)
@@ -53,9 +60,17 @@
         console.log(image)
       }
     }
+    
+    if (missingAlt.length) {
+      console.error('%cImages with missing alt', 'font-size: 13px;');
+
+      for(image of missingAlt) {
+        console.log(image)
+      }
+    }
   }
 
-    if (![...suspiciousAlt, ...missingDimensions, ...emptyAlt].length) {
+    if (![...suspiciousAlt, ...missingDimensions, ...emptyAlt, ...missingAlt].length) {
       console.info('All images look OK!')
     }
 
