@@ -1,7 +1,7 @@
 # Document Info
 
 
-[This script](https://raw.githubusercontent.com/matuzo/DevToolsSnippets/main/documentinfo/documentinfo.js) gives basic information about the document.
+[This script](documentinfo.js) gives basic information about the document.
 
 * Logs the page `<title>`
 * Logs the page description
@@ -11,7 +11,7 @@
 * Logs the number of DOM nodes in `<body>`
 * Lists headings and document outline
 
-![Demo output of the basic document information, including the heading outline that shows empty and skipped headings](assets/docinfo.png)
+![Demo output of the basic document information, including the heading outline that shows empty and skipped headings](../assets/docinfo.png)
 
 ## Language
 
