@@ -21,14 +21,14 @@ This not a replacement for automatic testing tools like the [HTML validator](htt
 
 ![Demo output of the basic document information, including the heading outline that shows empty and skipped headings](assets/docinfo.png)
 
-[documentinfo.js](documentinfo/documentinfo.js)
+[Details about documentinfo.js](documentinfo/)
 ### Debug images
 
 * Lists images without `width` and/or `height` attributes
 * Lists images with empty `alt` attributes
 * Lists images with _suspicious_  `alt` attributes
 
-[debugimages.js](debugimages/debugimages.js)
+[Details about debugimages.js](debugimages/)
 
 ![Demo output of the image debugging script that lists images with suspicious and empty alts and images with missing width or height attributes](assets/imagedebug.png)
 
@@ -40,7 +40,7 @@ For testing HTML output without CSS.
 * Removes all `style` elements
 * Removes all `style` attributes
 
-[removecss.js](removecss/removecss.js)
+[Details about removecss.js](removecss/)
 
 ### Is x present?
 
@@ -50,5 +50,5 @@ For testing HTML output without CSS.
 
 ![Demo output of the “Is x present?” script that lists a bunch of warning related to malformed HTML](assets/isxpresent.png)
 
-[isxpresent.js](isxpresent/isxpresent.js)
+[Details about isxpresent.js](isxpresent/)
 
