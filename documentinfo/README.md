@@ -35,4 +35,5 @@ The document outline is listed to let you check the following:
 * Are there empty headings?
 * Have heading levels been skipped?
 
+
 * [Semantic Structure: Regions, Headings, and Lists](https://webaim.org/techniques/semanticstructure/)

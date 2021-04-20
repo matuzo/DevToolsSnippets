@@ -22,7 +22,7 @@ Empty `alt` attributes are fine, if they're used on decorative images. If not, u
 
 [Accessible Images For When They Matter Most](https://www.smashingmagazine.com/2020/05/accessible-images/#decorative)
 
-Sometimes images contain useless information to pass validation or automatic tests. This tests checks if the value of the `alt` attribute contains any of the following keywords.
+Sometimes images contain useless information to pass validation or automatic tests. These tests checks if the value of the `alt` attribute contains any of the following keywords.
 
 * alt
 * image

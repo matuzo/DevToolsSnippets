@@ -2,7 +2,7 @@
 
 A collection of front-end debugging script snippets to be used in the [Sources panel](https://developer.chrome.com/docs/devtools/javascript/sources/) in Chrome DevTools.
 
-<img src="assets/sourcespanel.png" alt="The “Snippets” section highlighted in the sources panel in Chrome DevTools" width="838" height="524" style="height: auto">
+![The “Snippets” section highlighted in the sources panel in Chrome DevTools](assets/sourcespanel.png)
 
 You can copy these scripts and add them to your collection of snippets.
 
@@ -28,9 +28,9 @@ This not a replacement for automatic testing tools like the [HTML validator](htt
 * Lists images with empty `alt` attributes
 * Lists images with _suspicious_  `alt` attributes
 
-[Details about debugimages.js](debugimages/)
-
 ![Demo output of the image debugging script that lists images with suspicious and empty alts and images with missing width or height attributes](assets/imagedebug.png)
+
+[Details about debugimages.js](debugimages/)
 
 ### Remove CSS
 
