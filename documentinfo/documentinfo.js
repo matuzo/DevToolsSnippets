@@ -25,7 +25,7 @@
     const heading = headings[i];
     const level = parseInt(heading.nodeName.replace('H', ''));
 
-    console.log(`%c<${heading.nodeName}> ${heading.textContent}`, `padding-left: ${(level * 30)}px; font-size: ${30 - (level * 3)}px`)
+    console.log(`%c<${heading.nodeName}> ${heading.textContent.replace(/\s\s+/g, ' ').trim()}`, `padding-left: ${(level * 30)}px; font-size: ${30 - (level * 3)}px`)
   }
 
   console.log('---------')
