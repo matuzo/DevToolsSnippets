@@ -2,7 +2,7 @@
 
 A collection of front-end debugging script snippets to be used in the [Sources panel](https://developer.chrome.com/docs/devtools/javascript/sources/) in Chrome DevTools.
 
-<img src="assets/sourcespanel.png" alt="The “Snippets” section highlighted in the sources panel in Chrome DevTools" width="838" height="524">
+<img src="assets/sourcespanel.png" alt="The “Snippets” section highlighted in the sources panel in Chrome DevTools" width="838" height="524" style="height: auto">
 
 You can copy these scripts and add them to your collection of snippets.
 
