@@ -30,7 +30,7 @@
       level = parseInt(heading.nodeName.replace('H', ''));
     }
 
-    console.log(`%c<${heading.nodeName}> ${heading.textContent.replace(/\s\s+/g, ' ').trim()}`, `padding-left: ${(level * 30)}px; font-size: ${27 - (level * 3)}px`)
+    console.log(`%c<${heading.nodeName}> ${heading.textContent.replace(/\s\s+/g, ' ').trim()} ${(heading.getAttribute('role')=='heading') ? '(aria-level = ' + level + ')' : '' }`, `padding-left: ${(level * 30)}px; font-size: ${27 - (level * 3)}px`)
   }
 
   console.log('---------')
