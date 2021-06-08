@@ -20,6 +20,34 @@
   console.log(`DOM nodes in <head>: ${document.head.querySelectorAll('*').length}`)
   console.log(`DOM nodes in <body>: ${document.body.querySelectorAll('*').length}`)
 
+  const internalStylesheet = document.querySelectorAll('style');
+  console.groupCollapsed(`Number of <style> elements: ${document.querySelectorAll('style').length}`)
+  for (var i = 0; i < internalStylesheet.length; i++) {
+    console.log(internalStylesheet[i])
+  }
+  console.groupEnd();
+
+  const externalStylesheet = document.querySelectorAll('link[rel="stylesheet"]');
+  console.groupCollapsed(`Number of external stylesheets: ${externalStylesheet.length}`)
+  for (var i = 0; i < externalStylesheet.length; i++) {
+    console.log(externalStylesheet[i].href)
+  }
+  console.groupEnd();
+  
+  const internalScript = document.querySelectorAll('script:not([src])');
+  console.groupCollapsed(`Number of inline <script> elements: ${internalScript.length}`)
+  for (var i = 0; i < internalScript.length; i++) {
+    console.log(internalScript[i])
+  }
+  console.groupEnd();
+
+  const externalScript = document.querySelectorAll('script[src]');
+  console.groupCollapsed(`Number of external <script> elements: ${externalScript.length}`)
+  for (var i = 0; i < externalScript.length; i++) {
+    console.log(externalScript[i].src)
+  }
+  console.groupEnd();
+
   console.log('---------')
 
   var done = 'Finished running “Doc Info”'
