@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landmarks</title>
+</head>
+<body>
+  <h1>Landmarks Test</h1>
+
+  <header>
+    Header Landmark
+
+    <nav>Nav Landmark</nav>
+    <div role="navigation">Nav role=navigation</div>
+    <nav role="presentation">Nav role=presentation</nav>
+  </header>
+  <header aria-label="The Header">Header Landmark aria-label</header>
+  <header role="banner">Header role=banner</header>
+  <header role="presentation">Header role=presentation</header>
+  <div role="banner">div role=banner</div>
+
+  <footer>Footer Landmark</footer>
+  <footer aria-label="The Header">Footer Landmark aria-label</footer>
+  <footer role="contentinfo">Footer role=contentinfo</footer>
+  <footer role="presentation">Footer role=presentation</footer>
+  <div role="contentinfo">div role=contentinfo</div>
+
+  <aside>Aside Landmark</aside>
+  <aside aria-label="The Aside">Aside Landmark</aside>
+  <aside role="complementary">Aside role=complementary</aside>
+  <aside role="presentation">Aside role=presentation</aside>
+  <div role="complementary">Aside role=complementary</div>
+
+  <div role="main">div role=main</div>
+  <main role="presentation"> main role=presentation</main>
+  <main>
+    Main Landmark
+    <header>Header Landmark</header>
+    <header role="banner">Header role=banner</header>
+    <header role="presentation">Header role=presentation</header>
+    <div role="banner">div role=banner</div>
+
+    <footer>Footer Landmark</footer>
+    <footer role="contentinfo">Footer role=contentinfo</footer>
+    <footer role="presentation">Footer role=presentation</footer>
+    <div role="contentinfo">div role=contentinfo</div>
+    
+    <aside>Aside Landmark</aside>
+    <aside role="complementary">Aside role=complementary</aside>
+    <aside role="presentation">Aside role=presentation</aside>
+    <div role="complementary">Aside role=complementary</div>
+    
+    <span id="form_alb">Form aria-labelledby</span>
+    <span id="sectionalb">Section aria-labelledby</span>
+    <span id="regionalb">Region aria-labelledby</span>
+    
+    <form action="#">form</form>
+    <form action="#" role="search">form search</form>
+    <form action="#" title="form_title">Form title</form>
+    <form action="#" aria-label="form aria-label">Form aria-label</form>
+    <form action="#" aria-labelledby="form_alb">Form aria-labelledby<</form>
+      
+    <section>section</section>
+    <section aria-label="alsection">section</section>
+    <section aria-labelledby="sectionalb">section</section>
+
+    <div role="region">role region</div>
+    <div role="region" aria-label="regionalb">role region</div>
+    <div role="region" aria-labelledby="regionalb">role region</div>
+  </main>
+</body>
+</html>
