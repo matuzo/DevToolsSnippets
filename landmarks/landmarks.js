@@ -100,11 +100,11 @@
       checkLandmark(role);
    }
 
-   const checkCount = (role, element, count = 1) => {
+   const checkCount = (role, count = 1) => {
      const countLandmarks = results.filter(landmark => landmark.role === role).length;
 
      if (countLandmarks > count) {
-       console.warn(`There's more than ${count} <${element}>, please check!`)
+       console.warn(`There's more than ${count} ${role} landmark, please check!`)
      }
    }
 
@@ -112,14 +112,14 @@
      const countLandmarks = results.filter(landmark => landmark.role === role).length;
      const countUnlabelled = results.filter(landmark => landmark.role === role && landmark.label === '').length;
      if (countLandmarks > count && countUnlabelled > 0) {
-       console.warn(`There's more than ${count} <${element}> element and some are not labelled, please check!`)
+       console.warn(`There are one or more unlabelled navigation landmarks, please check!`)
      }
    }
 
-  checkCount('banner', 'header')
-  checkCount('main', 'main')
-  checkCount('contentinfo', 'footer')
-  checkLabel('navigation', 'nav')
+  checkCount('banner')
+  checkCount('main')
+  checkCount('contentinfo')
+  checkLabel('navigation')
 
   console.log()
   console.table(results)
