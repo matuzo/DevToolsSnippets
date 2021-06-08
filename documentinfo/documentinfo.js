@@ -16,6 +16,7 @@
   console.log(`Language: ${getAttr('html', 'lang')}`)
   console.log(`Charset: ${getAttr('meta[charset]', 'charset')}`)
   console.log(`Viewport: ${getAttr('meta[name="viewport"]', 'content')}`)
+  console.log(`Canonical URL: ${getAttr('link[rel="canonical"]', 'href')}`)
   console.log(`DOM nodes in <head>: ${document.head.querySelectorAll('*').length}`)
   console.log(`DOM nodes in <body>: ${document.body.querySelectorAll('*').length}`)
 
