@@ -11,7 +11,10 @@
 
   console.log('---------')
   console.log(`%cTitle: ${document.title}`, `font-size: 14px`);
+  console.log(`OG Title: ${getAttr('meta[property="og:title"]', 'content')}`)
   console.log(`Description: ${getAttr('meta[name="description"]', 'content')}`)
+  console.log(`OG Description: ${getAttr('meta[property="og:description"]', 'content')}`)
+  console.log(`OG image: ${getAttr('meta[property="og:image"]', 'content')}`)
 
   console.log(`Language: ${getAttr('html', 'lang')}`)
   console.log(`Charset: ${getAttr('meta[charset]', 'charset')}`)
